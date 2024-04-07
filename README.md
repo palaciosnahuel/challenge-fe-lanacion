@@ -11,8 +11,16 @@ _Ver Requerimientos en Challenge.pdf_
 
 ## Getting Started 🛫
 
+🌐 Disponible online en: https://challenge-fe-lanacion.vercel.app/
+
 ### Docker 🐋
-- TO DO
+
+Run
+```bash
+docker build -t lanacion-fe .
+docker-compose up --build
+```
+Disponible en http://localhost:3000/
 
 ### Manual ✋
 
