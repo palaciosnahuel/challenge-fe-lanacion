@@ -8,7 +8,7 @@ interface ArticleImageProps {
 const ArticleImage: FC<ArticleImageProps> = ({imgSrc, altText}) => {
     return (
         <section id="" className="cont-figure">
-            <a href="" onClick={(e)=> e.preventDefault()} className="figure">
+            <a href="" className="figure">
                 <picture id="" className="content-pic picture">
                     <img src={imgSrc} alt={altText} className="content-img" />
                 </picture>

@@ -1,13 +1,18 @@
-'use client'
-import React from 'react'
+import React, { FC } from 'react'
 import ArticleItem from './ArticleItem';
-import { useArticleContext } from '@/app/providers/ArticleContext';
+import { getArticlesParsed } from '@/infrastructure/usecases/ArticlesUseCases';
+import { Article } from '@/infrastructure/repository/ArticlesRepository';
 
-const ArticleList = () => {
-    const {data , loading} = useArticleContext()
+
+interface ArticleListProps{
+    articles : Article[]
+}
+
+const ArticleList: FC<ArticleListProps> = async ( {articles}) => {
+    
     return (
         <>
-            {!loading && data.articles.map((article: any) => (
+            {articles.map((article: any) => (
                 <ArticleItem article={article} key={article._id} />
             ))}
         </>
@@ -15,3 +20,4 @@ const ArticleList = () => {
 }
 
 export default ArticleList;
+
