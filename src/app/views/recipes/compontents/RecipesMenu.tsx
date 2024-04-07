@@ -1,13 +1,8 @@
 "use client"
+import React from 'react'
 import { useArticleContext } from '@/app/providers/ArticleContext';
-import { TagParse } from '@/infrastructure/usecases/ArticlesUseCases';
-import React, { FC } from 'react'
 
-interface RecipesMenuProps {
-    tags?: TagParse[]
-}
-
-const RecipesMenu: FC<RecipesMenuProps> = ({ tags }) => {
+const RecipesMenu = () => {
     const { data, filterData } = useArticleContext()
     return (
         <div className="row">
