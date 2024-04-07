@@ -53,7 +53,6 @@ export const ArticleProvider: React.FC<ArticleProviderProps> =  ({ children }) =
 
 const ArticleContext = createContext<ArticleContextType | undefined>(undefined);
 
-
 export const useArticleContext = (): ArticleContextType => {
     const context = useContext(ArticleContext);
     if (!context) {
