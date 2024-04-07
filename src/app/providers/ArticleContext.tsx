@@ -2,7 +2,6 @@ import { Article } from '@/infrastructure/repository/ArticlesRepository';
 import { TagParse, getArticlesParsed } from '@/infrastructure/usecases/ArticlesUseCases';
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-
 interface ArticleContextType {
     data: { articles: Article[], tags: TagParse[] },
     filterData: Function,
@@ -13,12 +12,10 @@ interface ArticleProviderProps {
     children: React.ReactNode
 }
 
-
 export const ArticleProvider: React.FC<ArticleProviderProps> =  ({ children }) => {
     const [initialData, setInitialData] = useState<{ articles: Article[], tags: TagParse[] }>({articles: [], tags: []});
     const [data, setData] = useState<{ articles: Article[], tags: TagParse[] }>({articles: [], tags: []});
     const [loading, setLoading] = useState<boolean>(true);
-
  
     const filterData = (tagSlug: string,event :Event): void => {
         event.preventDefault();
