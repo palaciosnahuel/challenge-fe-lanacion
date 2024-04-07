@@ -1,9 +1,9 @@
 'use client'
-import React, { FC } from 'react'
+import React from 'react'
 import ArticleItem from './ArticleItem';
 import { useArticleContext } from '@/app/providers/ArticleContext';
 
-const ArticleList = ({ }) => {
+const ArticleList = () => {
     const {data , loading} = useArticleContext()
     return (
         <>

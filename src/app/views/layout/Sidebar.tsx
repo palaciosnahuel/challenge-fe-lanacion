@@ -1,8 +1,6 @@
-import React, { FC } from 'react'
+import React from 'react'
 
-
-
-const Sidebar = ({ }) => {
+const Sidebar = () => {
     return (
         <div className="sidebar__aside">
             <div className="banner --desktop --large"></div>
