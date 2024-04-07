@@ -1,5 +1,5 @@
 
-const RecipesHeader = ({  }) => {
+const RecipesHeader = () => {
   return (
     <div className="row">
         <div className="com-titleWithfollow hlp-marginBottom-15">
