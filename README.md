@@ -26,7 +26,7 @@ Disponible en http://localhost:3000/
 
 Clonar repositorio
 ```bash
-git clone <url_del_repositorio>
+git clone https://github.com/palaciosnahuel/challenge-fe-lanacion.git
 ```
 Instalar dependencias
 ```bash
@@ -45,6 +45,12 @@ bun dev
 ```
 
 Disponible en [http://localhost:3000](http://localhost:3000).
+
+### Test 🃏
+
+```bash
+npm run test
+```
 
 ## Estructura 🏗️
 
